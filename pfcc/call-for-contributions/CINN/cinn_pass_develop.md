@@ -17,11 +17,13 @@ CINN中端Pass主要是对CINN中端表示的图进行优化，CINN前端接入�
 CINN中graph的实现参考下面头文件
 
 https://github.com/PaddlePaddle/CINN/blob/develop/cinn/common/graph_utils.h  //基类
+
 https://github.com/PaddlePaddle/CINN/blob/develop/cinn/hlir/framework/graph.h //中端Graph的定义
+
 https://github.com/PaddlePaddle/CINN/blob/develop/cinn/hlir/framework/node.h  //中端Node的定义
 
 CINN的Graph表示中有两个核心的结构：Node和Edge，即节点和边。
-节点又分为连个类型，Node和NodeData，其中Node表示计算，NodeData表示数据。
+节点又分为两个类型，Node和NodeData，其中Node表示计算，NodeData表示数据。
 这里给出了如何建立图的过程:
 
 https://github.com/PaddlePaddle/CINN/blob/develop/cinn/hlir/framework/graph.cc
